@@ -28,8 +28,6 @@ $(function(){
             username: $('#form_reg [name=username]').val(),
             password: $('#form_reg [name=password]').val()
         }
-        //http://api-breakingnews-web.itheima.net/
-        //http://ajax.frontend.itheima.net
         
         $.post('/api/reguser', data, function(res){
             if(res.status !== 0) {
